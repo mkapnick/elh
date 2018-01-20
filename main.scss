@@ -1,0 +1,217 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Dosis', sans-serif;
+  text-align: center;
+  padding: 0;
+  background: #fff;
+  color: #000;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 300;
+  padding: 2em 0 1.3em;
+  margin: 0;
+}
+
+h3 {
+  font-weight: 300;
+}
+
+section {
+  position: relative;
+  min-height: 100%;
+  box-sizing: border-box;
+  background: 100% 0% / cover;
+}
+
+section.home {
+  position: relative;
+  color: #fff;
+  img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+  }
+
+  .right {
+    padding-top: 7rem;
+    text-shadow: 0 0rem 0.2rem rgba(255,255,255,0.4);
+    position: absolute;
+    z-index: 2;
+    right: 20px;
+  }
+
+  address {
+    font-style: normal;
+    font-size: 1.4rem;
+  }
+}
+
+section.about {
+  background: #fff;
+  .content {
+    margin: 0 auto;
+    max-width: 720px;
+    text-align: left;
+  }
+}
+
+section.contact {
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 0;
+  }
+  .content {
+    font-size: 2.4rem;
+    position: absolute;
+    z-index: 2;
+    color: #fff;
+    font-weight: 900;
+    right: 100px;
+  }
+}
+
+section.map {
+}
+
+.absolute {
+  position: absolute;
+  left: 2rem;
+  right: 2rem;
+  z-index: 1;
+}
+
+.relative {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.p-t-5 {
+  padding-top: 5rem;
+}
+
+.p-t-3 {
+  padding-top: 3rem;
+}
+
+.p-t-1 {
+  padding-top: 1rem;
+}
+
+.p-b-2 {
+  padding-bottom: 2rem;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 40px;
+}
+
+.nav {
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  font-size: 1.5rem;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      list-style-type: none;
+
+      a {
+        font-weight: normal;
+        display: inline-block;
+        padding: 1rem;
+        text-decoration: none;
+        color: #000;
+      }
+    }
+  }
+
+  &.small {
+    background-color: black;
+    font-size: 0.8rem;
+
+    ul {
+      li {
+        a {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+p.b {
+  font-size: 25px;
+  font-weight: 900;
+  border-bottom: 2px solid #e7e7e7;
+}
+
+.title {
+  font-style: italic;
+  font-size: 18px;
+
+  > p {
+    margin-left: 30px;
+    font-style: normal;
+    text-decoration: underline;
+  }
+
+  ul {
+    margin-left: 20px;
+    font-style: normal;
+    text-decoration: none;
+    padding-bottom: 1rem;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bottom {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@media (min-width: 720px) {
+  section.home .right {
+    margin-right: 5rem;
+    text-align: right;
+  }
+}
