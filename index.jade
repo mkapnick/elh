@@ -18,13 +18,19 @@ html
 
 script.
   $(document).ready(function() {
-    $('.home-slick').slick({
-      dots: true
-    });
-  });
 
-script.
-  $(document).ready(function() {
+    console.log($('.home-slick'));
+
+    $('.home-slick').slick({
+      dots: true,
+      autoplay: true,
+      autoplaySpeed: 3500,
+      arrows: true,
+      slidesToShow: 1,
+      slidesToScroll: 2,
+      centerMode: true
+    });
+
     var $document = $(document);
     var $htmlBody = $('html,body');
     var $body = $(document.body);
