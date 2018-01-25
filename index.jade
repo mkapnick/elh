@@ -19,13 +19,20 @@ html
 script.
   $(document).ready(function() {
 
-    console.log($('.home-slick'));
+    $(window).scroll(function() {
+      if($(window).scrollTop() >= $(window).height() - 30) {
+        $('nav').addClass('dark-background');
+      } else {
+        $('nav').removeClass('dark-background');
+      }
+    });
 
     $('.home-slick').slick({
-      dots: true,
+      dots: false,
+      cssEase:'linear',
+      fade:true,
       autoplay: true,
       autoplaySpeed: 3500,
-      arrows: true,
       slidesToShow: 1,
       slidesToScroll: 2,
       centerMode: true
